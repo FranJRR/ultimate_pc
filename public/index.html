@@ -1,43 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>RTPC</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/LOGO.png" alt="RTPC" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sponsors">Patrocinadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">¡Bienvenidos a RTPC!</div>
+            <div class="masthead-heading text-uppercase">Donde encontraras tu PC ideal</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#services">TE MOSTRAMOS COMO</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Nuestros Servicios</h2>
+                <h3 class="section-subheading text-muted">Todos los servicios que os ofrecemos</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-screwdriver-wrench fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Creación y reparación</h4>
+                    <p class="text-muted">Nos encargamos de asesorarle para que encuentre su pc ideal, a la par tambien
+                        reparamos sus antiguos ordenadores.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-magnifying-glass-chart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Investigación del mercado</h4>
+                    <p class="text-muted">Somos profesionales en la búsqueda de calidad/precio. Tenemos convenios con
+                        las mejores marcas de componentes y herramientas para ello.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-award fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Garantía</h4>
+                    <p class="text-muted">Nuestra garantía cumple con la normativa europea. También se puede
+                        adquirir una garantia de 5 años (5% del coste del encargo).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Grid-->
+    <section class="page-section bg-light" id="project">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Proyectos y encargos</h2>
+                <h3 class="section-subheading text-muted">Estos son algunos proyectos que nos han encargado.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project item 1-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal1">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc1.jpg" alt="Valkyrie" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Valkyrie</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project item 2-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal2">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc2.jpg" alt="Warzone" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Warzone</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project item 3-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal3">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc3.jpg" alt="Shark" />
+                        </a>
+                        <div class=" project-caption">
+                            <div class="project-caption-heading">Shark</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Project item 4-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal4">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc4.jpg" alt="Metro" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Metro</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Project item 5-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal5">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc5.jpg" alt="Fenix" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Fenix</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Project item 6-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal6">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc6.jpg" alt="Asuna" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Asuna</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project item 7-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal7">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc7.jpg" alt="bunker" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">The bunker</div>
+                            <div class="project-caption-subheading text-muted">Ordenador dentro de la mesa</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project item 8-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal8">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc8.jpg" alt="iron casting" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Iron casting</div>
+                            <div class="project-caption-subheading text-muted">Ordenador dentro de la mesa</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project item 9-->
+                    <div class="project-item">
+                        <a class="project-link" data-bs-toggle="modal" href="#projectModal9">
+                            <div class="project-hover">
+                                <div class="project-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/project/pc9.png" alt="Elegant" />
+                        </a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Elegant</div>
+                            <div class="project-caption-subheading text-muted">Ordenador dentro de la mesa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Sobre nosotros</h2>
+                <h4 class="my-3">Como funcionamos</h4>
+                <p class="text-muted">Llevamos años montando ordenadores y customizandos carcasas de ordenador. <br>
+                    Creamos esta empresa con el fin de que cualquier persona que quisiese, pudiera comprarse un
+                    ordenador totalmente custom. <br>
+                    Siempre pensamos en el cliente en cuanto a precios y necesidades. <br>
+                    Comparamos los precios entre cientos de webs, y te damos el presupuesto en menos de 24 horas. <br>
+                    Gracias tambien a nuestros patrocinadores y convenios contamos con precios exclusivos para tiendas,
+                    con lo cual el cliente no tiene que pagar sobrecostes.<br>
+                </p>
+            </div>
+            <div class="text-center">
+                <h4 class="my-3">Donde encontrarnos</h4>
+            </div>
+            <div class="map-responsive">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444.8640534549264!2d-5.954018708912456!3d37.37491960411313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f34b70cf3d7%3A0x32665cb3f64483bb!2sMillennial%20(asesoria%20inmobiliaria%20y%20financiera)!5e0!3m2!1ses!2ses!4v1654952628779!5m2!1ses!2ses"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Sponsors-->
+    <section class="page-section bg-light" id="sponsors">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Nuestros patrocinadores</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="sponsors-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/sponsors/1.jpg" alt="willyrex" />
+                        <h4>Willyrex</h4>
+                        <p class="text-muted">youtuber de videojuegos</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/WillyrexYT" target="_blank"
+                            aria-label="willyrex Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/willyrex/?hl=es"
+                            target="_blank" aria-label="willyrex instagram Profile"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/user/willyrex"
+                            target="_blank" aria-label="willyrex youtube Profile"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sponsors-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/sponsors/2.jpg" alt="SFDX" />
+                        <h4>SFDX SHOW</h4>
+                        <p class="text-muted">Youtuber de tecnologia y experimentos</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sfdxpro" target="_blank"
+                            aria-label="Show Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/sfdxshow/?hl=es"
+                            target="_blank" aria-label="Show instagram Profile"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/c/SfdxShow"
+                            target="_blank" aria-label="Show youtube Profile"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sponsors-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/sponsors/3.jpg" alt="Varo" />
+                        <h4>Rincón de Varo</h4>
+                        <p class="text-muted">Youtuber de noticias </p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/ElRincondeVaro"
+                            target="_blank" aria-label="Varo Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/elrincondevaro/?hl=es"
+                            target="_blank" aria-label="Varo instagram Profile"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2"
+                            href="https://www.youtube.com/channel/UCnxubBCPlg0hHdZw_UehrTw" target="_blank"
+                            aria-label="Varo youtube Profile"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contactanos</h2>
+                <h4 style="color: gold;">Diganos que desea y en menos de 24 horas sera atendido.
+                </h4>
+            </div>
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Tu nombre*"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">El campo nombre es requerido.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Tu email*"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">El campo email es requerido.
+                            </div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Este email no es valido .</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Tu numero de telefono*"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">El campo telefono es
+                                requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Escriba que desea de nosotros*"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">El campo mensaje es
+                                requerido.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Se ha mandaddo correctamente</div>
+                    </div>
+                </div>
+
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error no se ha podido enviar</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                        onclick="sendmail()" id="submitButton" type="submit">Enviar mensaje</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; RTPC 2022</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3"
+                        href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal" target="_blank">Politica de
+                        privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Project Modals-->
+    <!-- Project item 1 modal popup-->
+    <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">Valkyrie</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc1.jpg"
+                                    alt="Valkyrie" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project item 2 modal popup-->
+    <div class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">Warzone</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc2.jpg" alt="Warzone" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project item 3 modal popup-->
+    <div class="project-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">Shark</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc3.jpg" alt="Shark" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project item 4 modal popup-->
+    <div class="project-modal modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">Metro</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc4.jpg" alt="Metro" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project item 5 modal popup-->
+    <div class="project-modal modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">Fenix</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc5.jpg" alt="Fenix" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project item 6 modal popup-->
+    <div class="project-modal modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">Asuna</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc6.jpg" alt="Asuna" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project item 7 modal popup-->
+    <div class="project-modal modal fade" id="projectModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">The bunker</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc7.jpg" alt="bunker" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project item 8 modal popup-->
+    <div class="project-modal modal fade" id="projectModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">iron casting</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc8.jpg"
+                                    alt="iron casting" />
+                                <button class=" btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project item 9 modal popup-->
+    <div class="project-modal modal fade" id="projectModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- project big-->
+                                <h2 class="text-uppercase">Elegant</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/project/pc9.png" alt="Elegant" />
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Send mail emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ma6Zb-S98_1QT0Xss");
+        })();
+
+        function sendmail() {
+            let userName = document.getElementById("name").value;
+            let userEmail = document.getElementById("email").value;
+            let userPhone = document.getElementById("phone").value;
+            let userMessage = document.getElementById("message").value;
+
+            var contactForm = {
+                user_name: userName,
+                user_mail: userEmail,
+                user_phone: userPhone,
+                message: userMessage
+            };
+
+            emailjs.send('service_nevsyvb', 'template_c2o57jh', contactForm).then(function (res) { })
+        }
+    </script>
+    <!-- more -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- Font Awesome iconos -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+</body>
+
 </html>
